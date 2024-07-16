@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritu Singh Portfolio</title>
+    <title>Ritul Singh - Personal Webpage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Ritul Singh</h1>
+        <p>Welcome to my personal webpage!</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </header>
-    <main>
+
+    <div class="container">
         <section id="about">
-            <h1>Ritu Singh</h1>
-            <p>Software Developer with expertise in various languages and frameworks.</p>
+            <h2>About Me</h2>
+            <p>Hello! I'm Ritul Singh, a passionate software developer. I enjoy coding, exploring new technologies, and building innovative projects. This website showcases some of my work and provides a way to contact me.</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
-            </div>
-            <!-- Additional projects go here -->
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Here are some of the projects I've worked on:</p>
+            <ul>
+                <li><a href="https://github.com/ritulsingh6/plantify">Plantify</a> - A project utilizing deep learning for plant disease detection.</li>
+                <li><a href="https://github.com/ritulsingh6/grocery-service">Grocery Service</a> - A grocery delivery website built using the MERN stack (MongoDB, Express.js, React, Node.js).</li>
+                <li><a href="https://leetcode.com/u/theritulsingh/">LeetCode 100 Days Badge</a> - Achieved a 100 days coding streak on LeetCode, solving various algorithmic challenges.</li>
+            </ul>
         </section>
+
         <section id="contact">
             <h2>Contact</h2>
-            <form id="contactForm">
+            <p>You can reach me at:</p>
+            <ul>
+                <li>Email: <a href="mailto:ritulsingh6666@gmail.com">ritulsingh6666@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/ritulsingh0507/">Ritul Singh's LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/ritulsingh6">Ritul Singh's GitHub Profile</a></li>
+            </ul>
+            <form id="contactForm" action="/submit" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -39,10 +45,12 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
-    </main>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Ritu Singh</p>
+        <p>&copy; 2024 Ritul Singh. All rights reserved.</p>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
