@@ -1,134 +1,214 @@
+Here's the updated HTML content for your personal webpage:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritul Singh - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ritul Singh - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffebee;
+            color: #333;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: #f9f9f9;
+        }
+        header {
+            background: linear-gradient(135deg, #e57373, #f44336);
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        section {
+            background-color: white;
+            margin: 1em 0;
+            padding: 2em;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        body.dark-mode section {
+            background-color: #444;
+        }
+        h2 {
+            color: #e57373;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            transition: color 0.3s;
+        }
+        body.dark-mode h2 {
+            color: #ef9a9a;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5em;
+        }
+        a {
+            color: #e57373;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #f44336;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+        }
+        #dark-mode-toggle {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            background: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            font-size: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+        #dark-mode-toggle:hover {
+            background: #f0f0f0;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <h1>Ritul Singh</h1>
-    <p>Software Engineer</p>
+    <p>Welcome to my personal webpage!</p>
     <button id="dark-mode-toggle">Toggle Dark Mode</button>
 </header>
 
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <div class="container">
-    <section id="about" class="about">
+    <section id="about">
         <h2>About Me</h2>
-        <img src="images/ritul.PNG" alt="Ritul Singh" class="profile-image">
-        <p>Hi, I'm Ritul Singh, a passionate Software Engineer. I specialize in developing efficient algorithms and creating innovative software solutions. With a strong foundation in computer science principles and a keen interest in new technologies, I am dedicated to solving complex problems and making a positive impact through technology.</p>
-        <div class="contact-info">
-            <p><strong>Mobile:</strong> (+91) 97030 72831</p>
-            <p><strong>Email:</strong> <a href="mailto:ritulsingh6666@gmail.com">ritulsingh6666@gmail.com</a></p>
-            <p><strong>Website:</strong> <a href="https://ritulsingh.vercel.app" target="_blank">www.ritulsingh.vercel</a></p>
-        </div>
+        <p>Hello! I'm Ritul Singh, a passionate Software Engineer. I enjoy coding, exploring new technologies, and building innovative projects. This website showcases some of my work and provides a way to contact me.</p>
+        <p><strong>Mobile:</strong> (+91) 97030 72831</p>
+        <p><strong>Email:</strong> <a href="mailto:ritulsingh6666@gmail.com">ritulsingh6666@gmail.com</a></p>
+        <p><strong>Website:</strong> <a href="https://www.ritulsingh.vercel">www.ritulsingh.vercel</a></p>
     </section>
 
-    <section id="education" class="education">
+    <section id="education">
         <h2>Education</h2>
-        <p><strong>Parul University (Vadodara)</strong><br>Bachelor of Computer Science and Technology; GPA: 7.10</p>
-        <p><strong>CAL Public School (Hyderabad)</strong><br>Physics, Chemistry, Mathematics; GPA: 8.50</p>
+        <ul>
+            <li><strong>Parul University (Vadodara)</strong>: Bachelor of Computer Science and Technology; GPA: 7.10</li>
+            <li><strong>CAL Public School (Hyderabad)</strong>: Physics, Chemistry, Mathematics; GPA: 8.50</li>
+        </ul>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills">
         <h2>Professional Skills</h2>
-        <h3>Languages:</h3>
-        <p>Python, JavaScript, HTML/CSS, Java, SQL, C/C++</p>
-        <h3>Frameworks:</h3>
-        <p>React, Angular, Django, Flask, Spring Boot, Bootstrap, Express.js</p>
-        <h3>Tools:</h3>
-        <p>Git, Excel, PowerPoint, Visual Studio Code (VS Code), PyCharm, Jupyter Notebook, IntelliJ IDEA</p>
-        <h3>Platforms:</h3>
-        <p>Microsoft Azure, Firebase, WordPress, AWS (Amazon Web Services), Google Cloud Platform (GCP)</p>
-        <h3>Soft Skills:</h3>
-        <p>Problem-Solving, Teamwork, Time Management, Collaboration, Attention to Detail, Communication</p>
+        <ul>
+            <li><strong>Languages:</strong> Python, JavaScript, HTML/CSS, Java, SQL, C/C++</li>
+            <li><strong>Frameworks:</strong> React, Angular, Django, Flask, Spring Boot, Bootstrap, Express.js</li>
+            <li><strong>Tools:</strong> Git, Excel, PowerPoint, Visual Studio Code (VS Code), PyCharm, Jupyter Notebook, IntelliJ IDEA</li>
+            <li><strong>Platforms:</strong> Microsoft Azure, Firebase, WordPress, AWS (Amazon Web Services), Google Cloud Platform (GCP)</li>
+            <li><strong>Soft Skills:</strong> Problem-Solving, Teamwork, Time Management, Collaboration, Attention to Detail, Communication</li>
+        </ul>
     </section>
 
-    <section id="experience" class="experience">
+    <section id="experience">
         <h2>Work Experience</h2>
-        <h3>Front-end Developer</h3>
-        <p><strong>Ajay Infotech, Panipat, India</strong><br>May 2024 - June 2024</p>
         <ul>
-            <li>Actively pursued learning opportunities to stay updated with frontend technologies and trends.</li>
-            <li>Utilized HTML, CSS, and JavaScript; worked with React.js for frontend development.</li>
-            <li>Documented frontend processes and best practices; shared knowledge with team through code reviews and discussions.</li>
+            <li><strong>Front-end Developer</strong>: Ajay Infotech, Panipat, India (May 2024 - June 2024)
+                <ul>
+                    <li>Actively pursued learning opportunities to stay updated with frontend technologies and trends.</li>
+                    <li>Utilized HTML, CSS, and JavaScript; worked with React.js for frontend development.</li>
+                    <li>Documented frontend processes and best practices; shared knowledge with team through code reviews and discussions.</li>
+                </ul>
+            </li>
         </ul>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects">
         <h2>Projects</h2>
-        <h3>Computer Network (NPTEL) | CERTIFICATE</h3>
-        <p>May 2023</p>
         <ul>
-            <li>Network design (LAN, WAN, WLAN), network protocols (TCP/IP, OSPF, BGP), network security (firewalls, VPNs).</li>
-            <li>Configured routers, switches; utilized Cisco Packet Tracer and GNS3 for network simulation.</li>
-        </ul>
-
-        <h3>DSA Master Course (CodeRank.in) | CERTIFICATE</h3>
-        <p>June 2023</p>
-        <ul>
-            <li>Mastered data structures (arrays, linked lists, trees) and algorithms (sorting, searching, dynamic programming).</li>
-            <li>Awarded 100 days problems solving badge and completed coding challenges on LeetCode.</li>
-        </ul>
-
-        <h3>Full Stack Web Development (CodeRank.in) | CERTIFICATE</h3>
-        <p>July 2023</p>
-        <ul>
-            <li>Mastered HTML, CSS, and JavaScript; developed back-end skills with Node.js, Express.js, SQL, and MongoDB.</li>
-            <li>Developed portfolio website, e-commerce platform, and dynamic web apps; collaborated on projects using Git/GitHub.</li>
-        </ul>
-
-        <h3>Grocery Delivery Service</h3>
-        <p>December 2023 - April 2024</p>
-        <ul>
-            <li>Implemented secure user authentication using JWT.</li>
-            <li>Built responsive UI components with React and managed state with Redux.</li>
-            <li>Developed RESTful APIs with Express.js and MongoDB for efficient data handling.</li>
-            <li>Collaborated with team members using GitHub and managed project tasks with JIRA.</li>
-        </ul>
-
-        <h3>Plantify using Deep Learning</h3>
-        <p>December 2023 - April 2024</p>
-        <ul>
-            <li>Developed a deep learning model to detect and classify plant diseases from leaf images to help improve agricultural productivity.</li>
-            <li>Collected and augmented a diverse dataset of plant leaf images; performed preprocessing techniques for optimal model input.</li>
-            <li>Enabled early disease detection, potentially reducing crop losses and improving agricultural productivity.</li>
-            <li>Achieved 75-85% accuracy on the test set; utilized confusion matrices and classification reports for evaluation.</li>
+            <li><strong>Computer Network (NPTEL) | CERTIFICATE</strong> (May 2023)
+                <ul>
+                    <li>Network design (LAN, WAN, WLAN), network protocols (TCP/IP, OSPF, BGP), network security (firewalls, VPNs).</li>
+                    <li>Configured routers, switches; utilized Cisco Packet Tracer and GNS3 for network simulation.</li>
+                </ul>
+            </li>
+            <li><strong>DSA Master Course (CodeRank.in) | CERTIFICATE</strong> (June 2023)
+                <ul>
+                    <li>Mastered data structures (arrays, linked lists, trees) and algorithms (sorting, searching, dynamic programming).</li>
+                    <li>Awarded 100 days problems solving badge and completed coding challenges on LeetCode.</li>
+                </ul>
+            </li>
+            <li><strong>Full Stack Web Development (CodeRank.in) | CERTIFICATE</strong> (July 2023)
+                <ul>
+                    <li>Mastered HTML, CSS, and JavaScript; developed back-end skills with Node.js, Express.js, SQL, and MongoDB.</li>
+                    <li>Developed portfolio website, e-commerce platform, and dynamic web apps; collaborated on projects using Git/GitHub.</li>
+                </ul>
+            </li>
+            <li><strong>Grocery Delivery Service</strong> (December 2023 - April 2024)
+                <ul>
+                    <li>Implemented secure user authentication using JWT.</li>
+                    <li>Built responsive UI components with React and managed state with Redux.</li>
+                    <li>Developed RESTful APIs with Express.js and MongoDB for efficient data handling.</li>
+                    <li>Collaborated with team members using GitHub and managed project tasks with JIRA.</li>
+                </ul>
+            </li>
+            <li><strong>Plantify using Deep Learning</strong> (December 2023 - April 2024)
+                <ul>
+                    <li>Developed a deep learning model to detect and classify plant diseases from leaf images to help improve agricultural productivity.</li>
+                    <li>Collected and augmented a diverse dataset of plant leaf images; performed preprocessing techniques for optimal model input.</li>
+                    <li>Enabled early disease detection, potentially reducing crop losses and improving agricultural productivity.</li>
+                    <li>Achieved 75-85% accuracy on the test set; utilized confusion matrices and classification reports for evaluation.</li>
+                </ul>
+            </li>
         </ul>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact</h2>
-        <p>You can reach me via email at <a href="mailto:ritulsingh6666@gmail.com">ritulsingh6666@gmail.com</a>.</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/ritul.singh" target="_blank">Instagram</a> |
-            <a href="https://www.linkedin.com/in/ritul-singh-0507" target="_blank">LinkedIn</a>
-        </div>
-        <form id="contactForm" action="/submit" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Ritul Singh. All rights reserved.</p>
-</footer>
-
-<script src="scripts.js"></script>
-</body>
-</html>
+        <p>You can reach me at:</p>
+        <
