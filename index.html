@@ -3,54 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritul Singh - Personal Webpage</title>
+    <title>Ritul Singh - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Ritul Singh</h1>
-        <p>Welcome to my personal webpage!</p>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Ritul Singh, a passionate software developer. I enjoy coding, exploring new technologies, and building innovative projects. This website showcases some of my work and provides a way to contact me.</p>
-        </section>
+<header>
+    <h1>Ritul Singh</h1>
+    <p>Software Engineer</p>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+</header>
 
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Here are some of the projects I've worked on:</p>
-            <ul>
-                <li><a href="https://github.com/ritulsingh6/plantify">Plantify</a> - A project utilizing deep learning for plant disease detection.</li>
-                <li><a href="https://github.com/ritulsingh6/grocery-service">Grocery Service</a> - A grocery delivery website built using the MERN stack (MongoDB, Express.js, React, Node.js).</li>
-                <li><a href="https://leetcode.com/u/theritulsingh/">LeetCode 100 Days Badge</a> - Achieved a 100 days coding streak on LeetCode, solving various algorithmic challenges.</li>
-            </ul>
-        </section>
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at:</p>
-            <ul>
-                <li>Email: <a href="mailto:ritulsingh6666@gmail.com">ritulsingh6666@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/ritulsingh0507/">Ritul Singh's LinkedIn Profile</a></li>
-                <li>GitHub: <a href="https://github.com/ritulsingh6">Ritul Singh's GitHub Profile</a></li>
-            </ul>
-            <form id="contactForm" action="/submit" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
+<div class="container">
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="images/ritul.PNG" alt="Ritul Singh" class="profile-image">
+        <p>Hi, I'm Ritul Singh, a passionate Software Engineer. I specialize in developing efficient algorithms and creating innovative software solutions. With a strong foundation in computer science principles and a keen interest in new technologies, I am dedicated to solving complex problems and making a positive impact through technology.</p>
+        <div class="contact-info">
+            <p><strong>Mobile:</strong> (+91) 97030 72831</p>
+            <p><strong>Email:</strong> <a href="mailto:ritulsingh6666@gmail.com">ritulsingh6666@gmail.com</a></p>
+            <p><strong>Website:</strong> <a href="https://ritulsingh.vercel.app" target="_blank">www.ritulsingh.vercel</a></p>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Ritul Singh. All rights reserved.</p>
-    </footer>
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <p><strong>Parul University (Vadodara)</strong><br>Bachelor of Computer Science and Technology; GPA: 7.10</p>
+        <p><strong>CAL Public School (Hyderabad)</strong><br>Physics, Chemistry, Mathematics; GPA: 8.50</p>
+    </section>
 
-    <script src="scripts.js"></script>
+    <section id="skills" class="skills">
+        <h2>Professional Skills</h2>
+        <h3>Languages:</h3>
+        <p>Python, JavaScript, HTML/CSS, Java, SQL, C/C++</p>
+        <h3>Frameworks:</h3>
+        <p>React, Angular, Django, Flask, Spring Boot, Bootstrap, Express.js</p>
+        <h3>Tools:</h3>
+        <p>Git, Excel, PowerPoint, Visual Studio Code (VS Code), PyCharm, Jupyter Notebook, IntelliJ IDEA</p>
+        <h3>Platforms:</h3>
+        <p>Microsoft Azure, Firebase, WordPress, AWS (Amazon Web Services), Google Cloud Platform (GCP)</p>
+        <h3>Soft Skills:</h3>
+        <p>Problem-Solving, Teamwork, Time Management, Collaboration, Attention to Detail, Communication</p>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Work Experience</h2>
+        <h3>Front-end Developer</h3>
+        <p><strong>Ajay Infotech, Panipat, India</strong><br>May 2024 - June 2024</p>
+        <ul>
+            <li>Actively pursued learning opportunities to stay updated with frontend technologies and trends.</li>
+            <li>Utilized HTML, CSS, and JavaScript; worked with React.js for frontend development.</li>
+            <li>Documented frontend processes and best practices; shared knowledge with team through code reviews and discussions.</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <h3>Computer Network (NPTEL) | CERTIFICATE</h3>
+        <p>May 2023</p>
+        <ul>
+            <li>Network design (LAN, WAN, WLAN), network protocols (TCP/IP, OSPF, BGP), network security (firewalls, VPNs).</li>
+            <li>Configured routers, switches; utilized Cisco Packet Tracer and GNS3 for network simulation.</li>
+        </ul>
+
+        <h3>DSA Master Course (CodeRank.in) | CERTIFICATE</h3>
+        <p>June 2023</p>
+        <ul>
+            <li>Mastered data structures (arrays, linked lists, trees) and algorithms (sorting, searching, dynamic programming).</li>
+            <li>Awarded 100 days problems solving badge and completed coding challenges on LeetCode.</li>
+        </ul>
+
+        <h3>Full Stack Web Development (CodeRank.in) | CERTIFICATE</h3>
+        <p>July 2023</p>
+        <ul>
+            <li>Mastered HTML, CSS, and JavaScript; developed back-end skills with Node.js, Express.js, SQL, and MongoDB.</li>
+            <li>Developed portfolio website, e-commerce platform, and dynamic web apps; collaborated on projects using Git/GitHub.</li>
+        </ul>
+
+        <h3>Grocery Delivery Service</h3>
+        <p>December 2023 - April 2024</p>
+        <ul>
+            <li>Implemented secure user authentication using JWT.</li>
+            <li>Built responsive UI components with React and managed state with Redux.</li>
+            <li>Developed RESTful APIs with Express.js and MongoDB for efficient data handling.</li>
+            <li>Collaborated with team members using GitHub and managed project tasks with JIRA.</li>
+        </ul>
+
+        <h3>Plantify using Deep Learning</h3>
+        <p>December 2023 - April 2024</p>
+        <ul>
+            <li>Developed a deep learning model to detect and classify plant diseases from leaf images to help improve agricultural productivity.</li>
+            <li>Collected and augmented a diverse dataset of plant leaf images; performed preprocessing techniques for optimal model input.</li>
+            <li>Enabled early disease detection, potentially reducing crop losses and improving agricultural productivity.</li>
+            <li>Achieved 75-85% accuracy on the test set; utilized confusion matrices and classification reports for evaluation.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via email at <a href="mailto:ritulsingh6666@gmail.com">ritulsingh6666@gmail.com</a>.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/ritul.singh" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/in/ritul-singh-0507" target="_blank">LinkedIn</a>
+        </div>
+        <form id="contactForm" action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Ritul Singh. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
 </body>
 </html>
